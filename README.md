@@ -1,2 +1,2 @@
 # Sqlprojects
-Sql project for data  analyst 
+I stored the SQL project codes
