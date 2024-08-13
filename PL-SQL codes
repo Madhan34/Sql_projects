@@ -16,7 +16,6 @@ LASTNAME  VARCHAR2(50) ,
 AGE  NUMBER(38)  ,
 GENDER VARCHAR2(50) )
 
-
 #insert into datas
 #solution 1
 INSERT INTO EmployeeDemographics(EmployeeID, FirstName, LastName, Age, Gender)
