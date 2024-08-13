@@ -1,0 +1,7 @@
+# first 5 rows only 
+select * from EmployeeDemographics fetch first 5 rows only ;
+
+# Pick unique values in specific column
+select distinct(GENDER) from EmployeeDemographics ;
+
+
