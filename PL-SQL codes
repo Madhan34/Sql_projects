@@ -15,3 +15,18 @@ FIRSTNAME VARCHAR2(50) ,
 LASTNAME  VARCHAR2(50) ,
 AGE  NUMBER(38)  ,
 GENDER VARCHAR2(50) )
+
+
+#insert into datas
+#solution 1
+INSERT INTO EmployeeDemographics(EmployeeID, FirstName, LastName, Age, Gender)
+VALUES (1004, 'Angela', 'Martin', 31, 'Female');
+INSERT INTO EmployeeDemographics(EmployeeID, FirstName, LastName, Age, Gender)
+VALUES (1005, 'Toby', 'Flenderson', 32, 'Male');
+INSERT INTO EmployeeDemographics(EmployeeID, FirstName, LastName, Age, Gender)
+VALUES (1006, 'Michael', 'Scott', 35, 'Male');
+# solution 2
+INSERT ALL
+    INTO EmployeeDemographics(EmployeeID, FirstName, LastName, Age, Gender) VALUES (1004, 'Angela', 'Martin', 31, 'Female')
+    INTO EmployeeDemographics(EmployeeID, FirstName, LastName, Age, Gender) VALUES (1005, 'Toby', 'Flenderson', 32, 'Male')
+    INTO EmployeeDemographics(EmployeeID, FirstName, LastName, Age, Gender) VALUES (1006, 'Michael', 'Scott', 35, 'Male')
