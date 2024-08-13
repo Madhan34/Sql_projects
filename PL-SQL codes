@@ -1,0 +1,17 @@
+# create table 1 EmployeeSalary
+
+CREATE TABLE EmployeeSalary (
+    EmployeeID int,
+    JobTitle varchar(50), 
+    Salary int,
+    CONSTRAINT fk_employee FOREIGN KEY (EmployeeID)
+    REFERENCES EmployeeDemographics (EmployeeID)
+);
+
+# create table 2 EmployeeDemographics
+CREATE TABLE EmployeeDemographics (
+EMPLOYEEID  NUMBER(38),   
+FIRSTNAME VARCHAR2(50) ,
+LASTNAME  VARCHAR2(50) ,
+AGE  NUMBER(38)  ,
+GENDER VARCHAR2(50) )
