@@ -55,4 +55,18 @@ CREATE TABLE Retail_Sales_Analysis
    SELECT * FROM retail_sales_analysis WHERE 
     sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
     gender IS NULL OR age IS NULL OR category IS NULL OR 
-    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;```
+    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+```
+
+### 3 . Data Analysis & Findings
+The following SQL queries were developed to answer specific business questions
+
+ **Write a SQL query to retrieve all columns for sales made on '23-06-22 **':
+
+```SQL
+  select * from retail_sales_analysis where SALE_DATE  = TO_DATE('23-06-22', 'DD-MM-YY');
+```
+ **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
+```sql
+select * from retail_sales_analysis where CATEGORY = 'Clothing' AND To_char( sale_date, 'YYYY-MM') = '2022-11' and QUANTITY >= 4;
+```
